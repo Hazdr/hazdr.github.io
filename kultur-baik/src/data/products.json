@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "placeholder": true,
+    "note": "Data katalog ini masih CONTOH (placeholder). Ganti dengan data produk asli sebelum publikasi. Tidak ada angka, sertifikasi, atau testimoni asli di sini."
+  },
+  "categories": [
+    { "id": "semua", "label": "Semua kultur" },
+    { "id": "yogurt", "label": "Starter Yogurt" },
+    { "id": "kefir", "label": "Kefir" },
+    { "id": "kombucha", "label": "Kombucha" },
+    { "id": "tempe", "label": "Ragi Tempe" },
+    { "id": "tape", "label": "Ragi Tape" },
+    { "id": "acar", "label": "Kultur Acar & Kimchi" }
+  ],
+  "items": [
+    {
+      "id": "yogurt-set",
+      "name": "Starter Yogurt Set",
+      "category": "yogurt",
+      "category_label": "Starter Yogurt",
+      "strain": "Lactobacillus delbrueckii subsp. bulgaricus + Streptococcus thermophilus",
+      "use": "Untuk yogurt set, Greek yogurt, dan yogurt tawar. Bakteri termofilik, aktif pada suhu 40-45°C.",
+      "packaging": "Sachet 10 g (untuk 5 L susu)",
+      "storage": "Kulkas 4°C atau freezer -20°C",
+      "shelf_life": "12 bulan (kering, belum diaktivasi)"
+    },
+    {
+      "id": "yogurt-probiotik",
+      "name": "Starter Yogurt Probiotik",
+      "category": "yogurt",
+      "category_label": "Starter Yogurt",
+      "strain": "Bifidobacterium animalis subsp. lactis + Lactobacillus acidophilus",
+      "use": "Untuk yogurt minum dengan klaim probiotik. Cocok untuk fermentasi 8-10 jam pada 38°C.",
+      "packaging": "Sachet 10 g (untuk 4 L susu)",
+      "storage": "Freezer -20°C",
+      "shelf_life": "12 bulan (kering, belum diaktivasi)"
+    },
+    {
+      "id": "kefir-susu",
+      "name": "Kefir Grain Susu",
+      "category": "kefir",
+      "category_label": "Kefir",
+      "strain": "Komunitas kefir: Lactobacillus kefiranofaciens, Leuconostoc spp., yeast",
+      "use": "Kefir susu dengan tekstur kental dan sedikit berbuih. Grain dapat ditumbuhkan ulang terus-menerus.",
+      "packaging": "Kantong 100 g (grain basah)",
+      "storage": "Kulkas 4°C dalam susu segar",
+      "shelf_life": "Aktif 3 bulan dengan pergantian susu tiap 3 hari"
+    },
+    {
+      "id": "kefir-air",
+      "name": "Kefir Air (Water Kefir)",
+      "category": "kefir",
+      "category_label": "Kefir",
+      "strain": "Komunitas water kefir: Lactobacillus hilgardii, Saccharomyces cerevisiae, Zymomonas mobilis",
+      "use": "Untuk kefir air berbasis larutan gula atau air kelapa. Hasil lebih ringan dibanding kefir susu.",
+      "packaging": "Kantong 100 g (grain basah)",
+      "storage": "Kulkas 4°C dalam larutan gula",
+      "shelf_life": "Aktif 3 bulan dengan pergantian larutan tiap 3 hari"
+    },
+    {
+      "id": "kombucha-scoby",
+      "name": "SCOBY Kombucha",
+      "category": "kombucha",
+      "category_label": "Kombucha",
+      "strain": "Symbiotic Culture of Bacteria and Yeast (Komagataeibacter xylinus, Gluconobacter spp., yeast)",
+      "use": "Untuk kombucha teh hitam atau hijau. SCOBY baru tumbuh setiap batch sebagai lapisan selulosa.",
+      "packaging": "Botol 250 mL (SCOBY + starter liquid)",
+      "storage": "Suhu ruang 22-26°C, wadah tertutup kain",
+      "shelf_life": "Aktif 2 bulan dengan pemberian teh baru tiap 7-10 hari"
+    },
+    {
+      "id": "kombucha-starter",
+      "name": "Starter Liquid Kombucha",
+      "category": "kombucha",
+      "category_label": "Kombucha",
+      "strain": "Kultur kombucha aktif dalam teh (Komagataeibacter xylinus, yeast)",
+      "use": "Cairan starter untuk memulai batch kombucha baru tanpa SCOBY padat. Untuk 5 L teh.",
+      "packaging": "Botol 500 mL",
+      "storage": "Kulkas 4°C",
+      "shelf_life": "1 bulan"
+    },
+    {
+      "id": "tempe-orizae",
+      "name": "Ragi Tempe Rhizopus oryzae",
+      "category": "tempe",
+      "category_label": "Ragi Tempe",
+      "strain": "Rhizopus oryzae",
+      "use": "Untuk tempe kedelai, tempe garbanzo, dan tempe biji lokal. Jamur tumbuh cepat, miselium rapat.",
+      "packaging": "Sachet 20 g (untuk 2 kg kedelai)",
+      "storage": "Suhu ruang kering 20-25°C, hindari lembap",
+      "shelf_life": "6 bulan"
+    },
+    {
+      "id": "tempe-oligosporus",
+      "name": "Ragi Tempe Rhizopus oligosporus",
+      "category": "tempe",
+      "category_label": "Ragi Tempe",
+      "strain": "Rhizopus oligosporus",
+      "use": "Untuk tempe dengan miselium putih tebal dan aroma ringan. Cocok untuk suhu ruang tropis.",
+      "packaging": "Sachet 20 g (untuk 2 kg kedelai)",
+      "storage": "Suhu ruang kering 20-25°C",
+      "shelf_life": "6 bulan"
+    },
+    {
+      "id": "tape-singkong",
+      "name": "Ragi Tape Singkong",
+      "category": "tape",
+      "category_label": "Ragi Tape",
+      "strain": "Saccharomyces cerevisiae + Rhizopus oryzae + Mucor spp.",
+      "use": "Untuk tape singkong dan tape ubi. Fermentasi 2-3 hari pada suhu ruang.",
+      "packaging": "Sachet 15 g (untuk 3 kg singkong)",
+      "storage": "Suhu ruang kering 20-25°C",
+      "shelf_life": "6 bulan"
+    },
+    {
+      "id": "tape-ketan",
+      "name": "Ragi Tape Ketan",
+      "category": "tape",
+      "category_label": "Ragi Tape",
+      "strain": "Saccharomyces cerevisiae + Amylomyces rouxii + Endomycopsis spp.",
+      "use": "Khusus tape ketan putih dan ketan hitam. Menghasilkan rendemen cairan manis yang lebih tinggi.",
+      "packaging": "Sachet 15 g (untuk 2 kg ketan)",
+      "storage": "Suhu ruang kering 20-25°C",
+      "shelf_life": "6 bulan"
+    },
+    {
+      "id": "kimchi-leuconostoc",
+      "name": "Starter Kimchi Leuconostoc",
+      "category": "acar",
+      "category_label": "Kultur Acar & Kimchi",
+      "strain": "Leuconostoc mesenteroides + Lactobacillus sakei",
+      "use": "Untuk kimchi sawi dan acar sayur. Asidifikasi terkendali, tekstur tetap renyah.",
+      "packaging": "Sachet 10 g (untuk 5 kg sayur)",
+      "storage": "Kulkas 4°C atau freezer -20°C",
+      "shelf_life": "12 bulan (kering, belum diaktivasi)"
+    },
+    {
+      "id": "acar-plantarum",
+      "name": "Starter Acar Lactiplantibacillus",
+      "category": "acar",
+      "category_label": "Kultur Acar & Kimchi",
+      "strain": "Lactiplantibacillus plantarum",
+      "use": "Untuk acar timun, wortel, dan bawang. Toleran terhadap kadar garam lebih tinggi.",
+      "packaging": "Sachet 10 g (untuk 5 kg sayur)",
+      "storage": "Kulkas 4°C",
+      "shelf_life": "12 bulan (kering, belum diaktivasi)"
+    }
+  ]
+}

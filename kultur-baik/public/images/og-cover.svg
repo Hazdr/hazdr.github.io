@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#FCFAF5" />
+  <g fill="#C1DDC3" opacity="0.55">
+    <circle cx="980" cy="90" r="10" />
+    <circle cx="1040" cy="140" r="7" />
+    <circle cx="900" cy="130" r="6" />
+    <circle cx="1090" cy="70" r="5" />
+  </g>
+  <g transform="translate(880,300)">
+    <circle r="220" fill="#F7F2E8" />
+    <circle r="220" fill="none" stroke="#C1DDC3" stroke-width="4" />
+    <circle r="196" fill="#FCFAF5" />
+    <g fill="#3A8449">
+      <circle cx="-60" cy="-64" r="34" />
+      <circle cx="52" cy="-88" r="22" opacity="0.8" />
+      <circle cx="70" cy="30" r="38" opacity="0.9" />
+      <circle cx="-74" cy="52" r="19" opacity="0.7" />
+      <circle cx="4" cy="86" r="15" opacity="0.6" />
+    </g>
+    <g fill="#D98A2B">
+      <circle cx="-118" cy="4" r="12" />
+      <circle cx="110" cy="-38" r="11" opacity="0.85" />
+    </g>
+  </g>
+  <g transform="translate(88,0)">
+    <g transform="translate(0,150)">
+      <circle cx="30" cy="30" r="30" fill="#24552F" />
+      <circle cx="21" cy="24" r="7" fill="#E8A34A" />
+      <circle cx="40" cy="21" r="5" fill="#FCFAF5" />
+      <circle cx="38" cy="40" r="8" fill="#94C39A" />
+      <text x="76" y="42" font-family="Poppins, sans-serif" font-size="34" font-weight="600" fill="#24552F">KulturBaik</text>
+    </g>
+    <text x="0" y="300" font-family="Poppins, sans-serif" font-size="56" font-weight="700" fill="#1B3922">Kultur bakteri baik untuk</text>
+    <text x="0" y="368" font-family="Poppins, sans-serif" font-size="56" font-weight="700" fill="#1B3922">fermentasi yang konsisten</text>
+    <text x="0" y="428" font-family="Inter, sans-serif" font-size="27" fill="#4E5A50">Strain jelas, kemasan terukur, dukungan teknis.</text>
+  </g>
+</svg>

@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font self-host (docs/TECH.md). font-display swap supaya teks tetap terbaca saat font dimuat. */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/poppins-latin-500-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/poppins-latin-600-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/poppins-latin-700-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/inter-latin-400-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/inter-latin-500-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/inter-latin-600-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/inter-latin-700-normal.woff2") format("woff2");
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply bg-cream-50 font-body text-ink antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Focus indicator tetap terlihat (R-32): jangan pernah hapus outline tanpa pengganti. */
+  :focus-visible {
+    outline: 3px solid #24552f;
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+
+  /* CTA utama: amber + teks ink (kontras 5.39:1). Hanya tombol aksi kunci yang pakai ini. */
+  .btn-primary {
+    @apply inline-flex min-h-[44px] items-center justify-center gap-2 rounded-card bg-amber-400 px-6 py-3 font-display text-base font-semibold text-ink transition-colors hover:bg-amber-300;
+  }
+
+  /* CTA sekunder: outline di atas latar terang. */
+  .btn-secondary {
+    @apply inline-flex min-h-[44px] items-center justify-center gap-2 rounded-card border-2 border-leaf-700 bg-transparent px-6 py-3 font-display text-base font-semibold text-leaf-800 transition-colors hover:bg-leaf-100;
+  }
+
+  /* Di atas latar hijau gelap, tombol sekunder dibalik agar tetap kontras. */
+  .btn-ghost-light {
+    @apply inline-flex min-h-[44px] items-center justify-center gap-2 rounded-card border-2 border-cream-50 bg-transparent px-6 py-3 font-display text-base font-semibold text-cream-50 transition-colors hover:bg-leaf-800;
+  }
+
+  .field-label {
+    @apply mb-1.5 block font-body text-sm font-semibold text-ink;
+  }
+
+  .field-input {
+    @apply min-h-[44px] w-full rounded-card border-2 border-leaf-200 bg-white px-3.5 py-2.5 font-body text-base text-ink placeholder:text-muted/70 focus:border-leaf-600;
+  }
+
+  .field-error {
+    @apply mt-1.5 hidden font-body text-sm font-medium text-red-700;
+  }
+
+  .field-input[aria-invalid="true"] {
+    @apply border-red-600;
+  }
+
+  .field-input[aria-invalid="true"] ~ .field-error {
+    @apply block;
+  }
+
+  /* Scroll-reveal hanya aktif saat JS jalan (class `js` di <html>), supaya konten tetap
+     terlihat kalau JS gagal. Tujuannya mengarahkan mata antar-section, bukan dekorasi. */
+  .js .reveal {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 0.55s ease-out, transform 0.55s ease-out;
+  }
+
+  .js .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .js .reveal {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  /* Motif identitas: koloni sel (cocci) sebagai pola berulang.
+     Alasan: bentuknya mewakili produk (kultur bakteri) dan mengikat semua section jadi satu bahasa visual. */
+  .motif-colony {
+    background-image: radial-gradient(circle at center, currentColor 42%, transparent 43%),
+      radial-gradient(circle at center, currentColor 42%, transparent 43%);
+    background-size: 34px 34px, 34px 34px;
+    background-position: 0 0, 17px 17px;
+  }
+}
